@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js loading">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tinashe Mugandani</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Mufudzi Christopher" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/lnu1fpi.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'scroll/css/base.css' %}" />
+    	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>document.documentElement.className="js";</script>
+	</head>
+	<body class="demo-1">
+		<main>
+			<header class="frame frame--header type-small">
+				<a class="frame__back" href="{% url 'home:home' %}">#Home</a>
+				<a class="frame__archive" href="{% url 'teach:teach' %}">All Teachings</a>
+				
+			</header>
+			<section class="intro">
+				<div class="intro__heading">
+
+					<p class="type-small">Howdy, cowboy! Before you go scrollin', simmer down and savor the ride. Yeehaw, but easy now!</p>
+				</div>
+			</section>
+			<section class="content">
+				<span class="content__number type-small">1</span>
+				<div class="blur-text blur-text--1" data-effect-1>
+			      	Public opinion is the aggregate result of individual opinions—now uniform, now conflicting—of the men and women who make up society or any group of society. In order to understand public opinion, one must go back to the individual who makes up the group.
+			    </div>
+		   	</section>
+		   	<section class="content">
+		   		<span class="content__number type-small">2</span>
+				<div class="blur-text blur-text--2" data-effect-2>
+			       The mental equipment of the average individual consists of a mass of judgments on most of the subjects which touch his daily physical or mental life.
+			    </div>
+		   	</section>
+		   	<section class="content">
+		   		<span class="content__number type-small">3</span>
+				<div class="blur-text blur-text--3" data-effect-3>
+					These judgments are the tools of his daily being and yet they are his judgments, not on a basis of research and logical deduction, but for the most part dogmatic expressions accepted on the authority of his parents, his teachers, his church, and of his social, his economic and other leaders.
+			    </div>
+		   	</section>
+		   	<section class="content">
+		   		<span class="content__number type-small">4</span>
+				<div class="blur-text blur-text--4" data-effect-4>
+			    	In tracing the interaction of institution upon public and public upon institution, one finds a circle of obedience and leadership. The press, the school and other leaders of thought are themselves working in a background which they cannot entirely control.
+			    </div>
+		   	</section>
+
+			{% comment %} <footer class="frame frame--footer type-small">
+				<span>Created by <a href="https://x.com/codrops">@codrops</a> 2024</span>
+				<span>Text from <a href="https://www.gutenberg.org/ebooks/61364">Crystallizing Public Opinion</a> by <a href="https://en.wikipedia.org/wiki/Edward_Bernays">Edward L. Bernays</a></span>
+				<a href="https://tympanus.net/codrops/collective/">Subscribe to our frontend newsletter</a>
+			</footer> {% endcomment %}
+		</main>
+		<!-- JavaScript dependencies -->
+		<!-- GSAP library -->
+		<script src="{% static 'scroll/js/gsap.min.js' %}"></script>
+		<!-- GSAP ScrollTrigger plugin -->
+		<script src="{% static 'scroll/js/ScrollTrigger.min.js' %}"></script>
+
+		<!-- SplitType for text manipulation: https://github.com/lukePeavey/SplitType -->
+		<script src="{% static 'scroll/js/split-type.min.js' %}"></script>
+
+		<!-- Add (Lenis) smooth scroll -->
+		<script src="{% static 'scroll/js/lenis.min.js' %}"></script>
+		<script src="{% static 'scroll/js/smoothscroll.js' %}"></script>
+
+		<!-- Scripts for the effect -->
+		<script type="module" src="{% static 'scroll/js/index.js' %}"></script>
+	</body>
+</html>
