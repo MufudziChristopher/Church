@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    	<title>Prophet Tinashe R. Mugandani - Global Word Ministries International</title>
+		<meta name="keywords" content="Prophet Tinashe Mugandani, Global Word Ministries, prophetic teaching, deliverance ministry, spiritual warfare, prayer and fasting, faith messages, revival, Holy Spirit, divine timing, kingdom principles, prophetic declarations, online sermons">
+		<meta name="description" content="Prophet Tinashe R. Mugandani of Global Word Ministries International - powerful prophetic teachings, deliverance, and revival. Watch sermons on prayer, faith, divine timing, and spiritual warfare.">
+		<meta name="author" content="Mufudzi Christopher" />
+		<link rel="shortcut icon" href="{% static 'contact/favicon.ico' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'contact/css/normalize.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'contact/css/demo.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'contact/css/component.css' %}" />
+		<script src="{% static 'contact/js/modernizr.custom.js' %}"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="{% url 'home:home' %}"><span style="color: #fff">#Home</span></a>
+			</div>
+<header class="codrops-header">
+    <h1>Connect With Us <span>We'd love to hear from you</span></h1>    
+</header>
+<section>
+    <form id="theForm" class="simform">
+        <div class="simform-inner">
+            <ol class="questions">
+                <li>
+                    <span><label for="q1">Your full name</label></span>
+                    <input id="q1" name="name" type="text" required/>
+                </li>
+                <li>
+                    <span><label for="q2">Email address</label></span>
+                    <input id="q2" name="email" type="email" required/>
+                </li>
+                <li>
+                    <span><label for="q3">Phone number (optional)</label></span>
+                    <input id="q3" name="phone" type="tel"/>
+                </li>
+                <li>
+                    <span><label for="q4">Your location (city/country)</label></span>
+                    <input id="q4" name="location" type="text"/>
+                </li>
+                <li>
+                    <span><label for="q5">How can we pray for you?</label></span>
+                    <input id="q5" name="prayer_request" type="text"/>
+                </li>
+                <li>
+                    <span><label for="q6">Your message to the ministry</label></span>
+                    <input id="q6" name="message" type="text"/>
+                </li>
+            </ol><!-- /questions -->
+            <button class="submit" type="submit">Send Message</button>
+            <div class="controls">
+                <button class="next"></button>
+                <div class="progress"></div>
+                <span class="number">
+                    <span class="number-current"></span>
+                    <span class="number-total"></span>
+                </span>
+                <span class="error-message"></span>
+            </div><!-- / controls -->
+        </div><!-- /simform-inner -->
+        <span class="final-message">Thank you! We'll be in touch soon.</span>
+    </form><!-- /simform -->            
+</section>
+		</div><!-- /container -->
+		<script src="{% static 'contact/js/classie.js' %}"></script>
+		<script src="{% static 'contact/js/stepsForm.js' %}"></script>
+		<script>
+			var theForm = document.getElementById( 'theForm' );
+                        //disable form autocomplete
+                        theForm.setAttribute( "autocomplete", "off" );
+
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					// hide form
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+					/*
+					form.submit()
+					or
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+					*/
+
+					// let's just simulate something...
+					var messageEl = theForm.querySelector( '.final-message' );
+					messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+					classie.addClass( messageEl, 'show' );
+				}
+			} );
+		</script>
+	</body>
+</html>

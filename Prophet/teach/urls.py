@@ -11,6 +11,6 @@ urlpatterns = [
     #------------ (STORE - URLS) ------------
 
 	path('', views.teach, name="teach"),
-	path('/scroll', views.scroll, name="scroll"),
+	path('scroll', views.scroll, name="scroll"),
 
 ]

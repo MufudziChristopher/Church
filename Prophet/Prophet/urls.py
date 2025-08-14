@@ -25,9 +25,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls', namespace='home')),
     path('teachings', include('teach.urls', namespace='teach')),
-    path('story', include('story.urls', namespace='story')),
+    path('about', include('story.urls', namespace='story')),
     path('videos', include('videos.urls', namespace='videos')),
     path('gallery', include('gallery.urls', namespace='gallery')),
+    path('contact', include('contact.urls', namespace='contact')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

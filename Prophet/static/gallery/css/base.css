@@ -27,9 +27,11 @@ body {
   overflow: hidden;
   position: fixed;
   top: 0;
-  background-image: url(../img/noise.png), radial-gradient(ellipse at top, var(--color-grad-1), transparent), radial-gradient(ellipse at bottom, var(--color-grad-2), transparent);
-  background-size: 180px, 100%, 200%;
-  background-attachment: fixed;
+	background-image: url('../../tinashe.jpeg') ;
+background-size: contain;  
+background-position: center;
+background-attachment: fixed;
+
 }
 
 .demo-2 {
@@ -233,6 +235,7 @@ main {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	background-size: contain;
   will-change: transform, opacity;
 }
 
@@ -259,7 +262,7 @@ main {
 .grid__img {
 	width: 100%;
 	height: 100%;
-	background-size: cover;
+	background-size: contain;
 	background-position: 50% 50%;
 	pointer-events: auto;
 	filter: brightness(0.6);

@@ -24,6 +24,9 @@ body {
 	margin: 0;
 	color: var(--color-text);
 	background-color: var(--color-bg);
+	background-image: url('../../tinashe.jpeg');
+	background-position: center;
+	background-attachment: fixed;
 	font-family: "JetBrains Mono", monospace;
 	font-weight: 300;
 	font-optical-sizing: auto;
@@ -40,7 +43,6 @@ body::after {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-image: repeating-linear-gradient(transparent, transparent 2px, #0000003d 3px);
 	background-size: auto 100%;
 	pointer-events: none;
 }
@@ -58,15 +60,21 @@ body::after {
 .demo-3 {
 	--color-text: #fff;
 	--color-bg: #1d2619;
-	--color-link: #8adcc0;
+	--color-link: #fff;
 	--color-link-hover: #fff;
 	--color-list-item: #c5c5c5;
-	--color-title: #41483e;
+	--color-title: #fff;
 	--color-number: #fff;
 }
 
+.tc {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  padding: .5rem;
+  border-radius: 12px;
+}
+
 .demo-4 {
-	background-image: url(../img/noise.png), url(../img/bg.jpg);
 	background-size: 100px, cover;
 	background-position: 50% 50%;
 	--color-text: #fff;
@@ -208,7 +216,7 @@ a:focus-visible {
 }
 
 .content__title {
-	font-size: 12px;
+	font-size: 20px;
 	color: var(--color-title);
 }
 

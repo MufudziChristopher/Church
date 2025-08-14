@@ -6,7 +6,7 @@
 
 :root {
   font-size: 16px;
-  --color-text: #b8afaa;
+  --color-text: #fff;
   --color-bg: #000;
   --color-link: #968a84;
   --color-link-hover: #fff;
@@ -21,7 +21,12 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-
+.tc {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+  padding: .5rem;
+  border-radius: 12px;
+}
 body {
   margin: 0;
   color: var(--color-text);
@@ -31,8 +36,9 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../img/noise.png), radial-gradient(ellipse at top, #242937, transparent), radial-gradient(ellipse at bottom, #171340, transparent);
-  background-size: 200px, 100%, 200%;
+  background-image: url(../../tinashe.jpeg), radial-gradient(ellipse at top, #242937, transparent), radial-gradient(ellipse at bottom, #171340, transparent);
+  background-size: contain  ;
+  background-position: center;
   background-attachment: fixed;
 }
 
